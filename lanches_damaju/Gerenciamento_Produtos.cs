@@ -35,7 +35,7 @@ namespace lanches_damaju
                     //Abre conexão
                     consulta.Open();
                     //Consulta SQL para selecionar Clientes
-                    string listagem = "SELECT id_produto, Nome, Valor, Descricao, Categoria  FROM tb_produtos";
+                    string listagem = "SELECT id_produto, Nome, Valor, Descricao, Categoria FROM tb_produtos";
 
                     //Cria o comando MySql
                     using (MySqlCommand cmd = new MySqlCommand(listagem, consulta))

@@ -105,10 +105,11 @@
             // 
             this.maskedTextBoxValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBoxValor.Location = new System.Drawing.Point(160, 125);
-            this.maskedTextBoxValor.Mask = "$000,000.00";
+            this.maskedTextBoxValor.Mask = "$000,000,000.00";
             this.maskedTextBoxValor.Name = "maskedTextBoxValor";
             this.maskedTextBoxValor.Size = new System.Drawing.Size(249, 26);
             this.maskedTextBoxValor.TabIndex = 21;
+            this.maskedTextBoxValor.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBoxValor_MaskInputRejected);
             // 
             // richTextBoxDescricao
             // 

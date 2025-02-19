@@ -42,7 +42,7 @@ namespace lanches_damaju
                         //Adicionar os parâmentros com os valores dos TextBox
                         comando.Parameters.AddWithValue("@Nome", textBoxNome.Text);
                         comando.Parameters.AddWithValue("@Valor", maskedTextBoxValor.Text);
-                        comando.Parameters.AddWithValue("@Descricao ", richTextBoxDescricao.Text);
+                        comando.Parameters.AddWithValue("@Descricao", richTextBoxDescricao.Text);
                         comando.Parameters.AddWithValue("@Categoria", textBoxCategoria.Text);
 
                         if (pictureBox1.Image != null)
@@ -117,6 +117,11 @@ namespace lanches_damaju
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBoxValor_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
